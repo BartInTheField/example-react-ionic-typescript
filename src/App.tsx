@@ -1,28 +1,24 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { IonApp, IonCard, IonCardHeader, IonCardContent } from '@ionic/react';
 import './App.css';
+import '@ionic/core/css/core.css';
+import '@ionic/core/css/ionic.bundle.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+const App = () => {
+  return (
+    <IonApp>
+      <IonCard>
+        <IonCardHeader>
+          <h1>
+            Ionic + React
+          </h1>
+        </IonCardHeader>
+        <IonCardContent>
+          This is my first Ionic React application!
+        </IonCardContent>
+        </IonCard>
+    </IonApp>
+  );
 }
 
 export default App;
